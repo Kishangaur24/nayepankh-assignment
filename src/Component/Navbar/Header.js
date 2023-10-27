@@ -12,7 +12,7 @@ function Header() {
     scroll.scrollToTop()
   }
   return (
-    <Navbar bg="dark" expand="lg" variant="dark" style={{ position: 'sticky', top: '0' }} >
+    <Navbar bg="dark" expand="lg" variant="dark"  >
       <Container>
       <img src={img} height="150px"/>
         {/* <Navbar.Brand as={NavLink} to="/"><img src='../FrontPage/logo.jpg'/></Navbar.Brand> */}
