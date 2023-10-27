@@ -8,9 +8,9 @@ const HomePage = () => {
   return (
     <div>
   <FrontPage/>
-  <AboutUs/>
-  <ControlledCarousel/>
-  <GetInTouch/>
+  {/* <AboutUs/> */}
+  {/* <ControlledCarousel/> */}
+  {/* <GetInTouch/> */}
     </div>
   )
 }
