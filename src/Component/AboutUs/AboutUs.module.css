@@ -1,0 +1,55 @@
+.about{
+    height: 38rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+.image img{
+    height: 35rem;
+    width: 30rem;
+    margin-top: 2rem;
+}
+.image{
+    /* border: 2px solid blue; */
+    width: 35rem;
+    height: 38rem;
+}
+.content{
+    /* border: 2px solid red; */
+    width: 35rem;
+    padding: 4rem;
+    font-size: larger;
+
+}
+.content p{
+    text-align: start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+.content h1{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 6rem;
+    /* border: 2px solid red; */
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.btn button{
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
