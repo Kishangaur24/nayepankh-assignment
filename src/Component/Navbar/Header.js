@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import img from "../FrontPage/logo.jpg"
 function Header() {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark" >
+    <Navbar bg="dark" expand="lg" variant="dark" style={{ position: 'sticky', top: '0' }} >
       <Container>
       <img src={img} height="150px"/>
         {/* <Navbar.Brand as={NavLink} to="/"><img src='../FrontPage/logo.jpg'/></Navbar.Brand> */}
