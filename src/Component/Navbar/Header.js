@@ -13,7 +13,7 @@ function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
           <Nav.Link as={NavLink} className='text-white ' to="/">Home</Nav.Link>
-          <Nav.Link as={NavLink}  className='text-white' to="/certificate">About us</Nav.Link>
+          <Nav.Link as={NavLink}  className='text-white' to="/AboutUs">About us</Nav.Link>
           <Nav.Link as={NavLink} className='text-white' to="/certificate">Our Certificate</Nav.Link>
           <Nav.Link as={NavLink} className='text-white' to="/certificate">News-Paper Recognition</Nav.Link>
           <Nav.Link as={NavLink} className='text-white' to="/certificate">Donate</Nav.Link>
