@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import style from "./SignUp.module.css"
 import { useNavigate } from 'react-router-dom'
+
 const SignUp = () => {
 
 
@@ -36,7 +37,8 @@ const SignUp = () => {
 
      setErrors(validationErrors)
      if(Object.keys(validationErrors).length===0){
-      alert("You registered successfully")
+     alert("You registered successfully")
+      
       navigate("/home")
      }
      const existingData = JSON.parse(localStorage.getItem('signupData')) || [];
@@ -54,6 +56,7 @@ const SignUp = () => {
   }
  
   const handleLogin=()=>{
+
     navigate("/login")
   }
 
@@ -84,6 +87,7 @@ const SignUp = () => {
          {errors.password && <span className={style.passwordError}>{errors.password}</span>}
         <input
         name='password'
+        type='password'
          placeholder='Enter your password'
          value={password}
          required
@@ -92,6 +96,7 @@ const SignUp = () => {
          
         <div className={style.btn}>
         <button onClick={handleSubmit}>Register here</button>
+        
         <button onClick={handleLogin}>Login</button>
         </div>
       </div>

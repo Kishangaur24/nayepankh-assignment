@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import style from "./SignIn.module.css"
 import { useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const SignIn = () => {
   
   const [email,setEmail]=useState("")
@@ -14,7 +16,11 @@ const SignIn = () => {
       alert("you login successfully")
       navigate("/home")
      }else{
-      alert("your email or password incorrect")
+      // alert("your email or password incorrect")
+      toast.error("your email or password incorrect please fill valid credential",{
+        position:"top-center"
+      })
+     
      }
   }
 
@@ -39,6 +45,7 @@ const SignIn = () => {
          {/* {errors.password && <span className={style.passwordError}>{errors.password}</span>} */}
         <input
         name='password'
+        type='password'
          placeholder='Enter your password'
          value={password}
          required
@@ -47,6 +54,7 @@ const SignIn = () => {
          
         <div className={style.btn}>
         <button onClick={handleLogin}>Login here</button>
+        <ToastContainer/>
         <button onClick={handleSignIn}>SignUp</button>
         </div>
       </div>
