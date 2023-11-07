@@ -19,13 +19,14 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-          <Nav.Link as={NavLink} className='text-white ' to="/">Home</Nav.Link>
+         
           <ScrollLink to="/aboutUs" smooth={true} duration={500}>
           <Nav.Link as={NavLink}  className='text-white' to="/aboutUs"  onClick={handleClick}>About us</Nav.Link>
           </ScrollLink>
           <Nav.Link as={NavLink} className='text-white' to="/certificate">Our Certificate</Nav.Link>
           <Nav.Link as={NavLink} className='text-white' to="/certificate">News-Paper Recognition</Nav.Link>
           <Nav.Link as={NavLink} className='text-white' to="/certificate">Donate</Nav.Link>
+          <Nav.Link as={NavLink} className='text-white ' to="/">Logout</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
