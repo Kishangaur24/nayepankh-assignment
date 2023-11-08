@@ -44,7 +44,7 @@ const SignUp = () => {
 
     // Save the updated data to local storage
     localStorage.setItem("user", JSON.stringify(userData));
-     alert("registered successfully")
+    //  alert("registered successfully")
     setName("");
     setEmail("");
     setPassword("");
