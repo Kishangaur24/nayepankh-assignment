@@ -7,6 +7,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import AboutUs from './Component/AboutUs/AboutUs';
 import SignUp from './Component/SignUp/SignUp';
 import SignIn from './Component/SignIn/SignIn';
+import FeedbackForm from './Component/Feedback/Feedback';
 // import Header from './Component/Navbar/Header';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='/' element={<SignUp/>}/>
       <Route path='/login' element={<SignIn/>}/>
       <Route path='/AboutUs' element={<AboutUs/>}/>
+      <Route path='/feedback' element={<FeedbackForm/>}/>
         
       </Routes>
     </BrowserRouter>
