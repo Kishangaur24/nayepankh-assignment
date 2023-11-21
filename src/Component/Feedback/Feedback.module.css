@@ -1,0 +1,26 @@
+.main{
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form textarea{
+    outline: none;
+    border: none;
+    height: 15rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 20px 15px 6px 3px black;
+}
+
+.form button{
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 1rem;
+}
