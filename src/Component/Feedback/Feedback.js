@@ -9,15 +9,13 @@ const FeedbackForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can send the feedback to your backend or perform actions with it
+    // Here you can send the feedback
     if(feedback===""){
        alert("Please first provide feedback somethin")
     }else{
     localStorage.setItem("feedback",JSON.stringify(feedback))
     console.log('Feedback submitted:', feedback);
-    // You can implement an API call here to send the feedback data to the server
-    // For simplicity, logging the feedback to the console in this example
-    setFeedback(''); // Clear the feedback input after submission
+    setFeedback(''); 
     alert("Thankyou for your review ")
     }
   };
