@@ -9,6 +9,7 @@ import FeedbackForm from '../../Component/Feedback/Feedback'
 
 import style from "./HomePage.module.css"
 import { useNavigate } from 'react-router-dom'
+import BotpressChat from '../../Component/chatbot/Botpress'
 
 
 const HomePage = () => {
@@ -25,6 +26,9 @@ const HomePage = () => {
   <GetInTouch/>
   {/* <FeedbackForm/> */}
   <button className={style.btn} onClick={handleFeedback}>Give feedback</button>
+  
+  <BotpressChat/>
+  
     </div>
   )
 }
